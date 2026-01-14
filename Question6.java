@@ -8,13 +8,17 @@ public class Question6 {
         double a;
         double b;
         double height;
+        double area;
 
-        System.out.print("Enter obtained marks: ");
-        obtained = input.nextDouble();
-        System.out.print("Enter Maximum marks: ");
-        maximum = input.nextDouble();
-        percentage = (obtained / maximum) * 100;
+        System.out.print("Enter length of First parallel side: ");
+        a = input.nextDouble();
+        System.out.print("Enter length of Second parallel side: ");
+        b = input.nextDouble();
+        System.out.print("Enter heigth (the perpendicular distance between these two parallel lines): ");
+        height = input.nextDouble();
+        
+        area=height * (a+b)/2;
 
-        System.out.println("Percentage = " + percentage + " %");
+        System.out.println("Area of Trapezoid = " + area);
     }
 }
